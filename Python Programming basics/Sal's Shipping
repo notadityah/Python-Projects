@@ -1,0 +1,42 @@
+weight = 41.5
+#Ground Shipping
+
+if weight <= 2:
+  shipping_price = 20 + 1.5*weight
+  print("The shipping price for your package for Ground Shipping is: " + str(shipping_price))
+elif weight <= 6 and weight >2 :
+  shipping_price = 20 + 3*weight
+  print("The shipping price for your package for Ground Shipping  is: " + str(shipping_price))
+elif weight > 6 and weight <= 10 :
+  shipping_price = 20 + 4*weight
+  print("The shipping price for your package for Ground Shipping  is: " + str(shipping_price))
+elif weight > 10 :
+  shipping_price = 20 + 4.75*weight
+  print("The shipping price for your package for Ground Shipping  is: " + str(shipping_price))
+else :
+  print("Error 404")
+
+premium_shipping_price = 125
+print("The premium shipping price is: " + str(premium_shipping_price))
+
+weight2 = 41.5
+#Drone Shipping
+if weight2 <= 2:
+  shipping_price = 4.5*weight2
+  print("The shipping price for your package for Drone Shipping is: " + str(shipping_price))
+elif weight2 <= 6 and weight2 >2 :
+  shipping_price = 9*weight2
+  print("The shipping price for your package for Drone Shipping  is: " + str(shipping_price))
+elif weight2 > 6 and weight2 <= 10 :
+  shipping_price = 12*weight2
+  print("The shipping price for your package for Drone Shipping  is: " + str(shipping_price))
+elif weight2 > 10 :
+  shipping_price = 14.25*weight2
+  print("The shipping price for your package for Drone Shipping  is: " + str(shipping_price))
+else :
+  print("Error 404")
+
+
+
+
+
